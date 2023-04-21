@@ -1,4 +1,4 @@
-// var screen = document.getElementsById("screen")[0]
+
 var button = document.getElementsByClassName("button");
 var arr = [...button];
 var all = document.querySelector(".calculator")
@@ -17,7 +17,7 @@ arr.forEach((element, index) => {
         all.classList.add("second")
         document.body.style.backgroundColor="hsl(0, 0%, 90%)"
         
-      } else {
+      } else if(index == 2) {
         all.classList.remove("second")
       all.classList.remove("first")
       all.classList.add("third")
